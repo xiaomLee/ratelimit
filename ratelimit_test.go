@@ -2,6 +2,7 @@ package ratelimit
 
 import (
 	"fmt"
+	"golang.org/x/time/rate"
 	"strconv"
 	"testing"
 	"time"
@@ -61,4 +62,10 @@ func TestTokenAccess(t *testing.T) {
 		}
 	}
 
+}
+
+// 测试golang标准库的限流器
+func TestTimeRate(t *testing.T) {
+	limiter := rate.NewLimiter(1, 10)
+	limiter.Allow()
 }

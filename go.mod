@@ -8,4 +8,5 @@ require (
 	github.com/jinzhu/gorm v1.9.12
 	github.com/onsi/ginkgo v1.12.0 // indirect
 	github.com/onsi/gomega v1.9.0 // indirect
+	golang.org/x/time v0.0.0-20191024005414-555d28b269f0 // indirect
 )
